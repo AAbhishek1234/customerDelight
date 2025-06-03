@@ -56,7 +56,6 @@ const StyleMarketNavbar = () => {
             <Nav.Link href="/men'swear">Men's Wear</Nav.Link>
             <Nav.Link href="#">Women's Wear</Nav.Link>
             <Nav.Link href="#">Footwear</Nav.Link>
-            <Nav.Link href="#">Stores</Nav.Link>
             <Nav.Link href="/about-us">About</Nav.Link>
           </Nav>
         </Navbar.Collapse>
