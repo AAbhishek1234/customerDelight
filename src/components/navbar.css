@@ -1,3 +1,37 @@
 .navbar .nav-link {
   color: black !important;
+  font-size: 1.1rem !important;
+  white-space: nowrap;
+}
+
+input.form-control.searchbar {
+ width: 300px; /* Default width for larger screens */
+  max-width: 100%;
+  color: black !important;
+  background-color: white !important;
+  border: 1px solid black !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+input.form-control.searchbar:focus {
+  box-shadow: none !important;
+  border-color: black !important;
+  outline: none !important;
+}
+@media (max-width: 768px) {
+ input.form-control.searchbar {
+    width: 90px !important;
+    margin-top: 1rem;
+  max-width: 70% !important;
+  }
+  .searchbutton{
+    margin-top: 1rem !important;
+
+  }
+
+}
+
+body {
+  overflow-x: hidden !important;
 }

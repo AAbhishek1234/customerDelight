@@ -22,9 +22,10 @@
   }
 
   .hero-section .btn {
-    width: 30%;
+    width: 35%;
     text-align: left;
-    height: 3.8rem;
+    height: 3rem;
+     /* white-space: nowrap; */
   }
 
   .hero-section {

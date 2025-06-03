@@ -5,7 +5,7 @@ import {
   Nav,
   Container,
   Button,
-  Form,
+ 
   FormControl,
   InputGroup
 } from 'react-bootstrap';
@@ -30,26 +30,28 @@ const StyleMarketNavbar = () => {
   return (
     <Navbar expand="lg" bg="white" className="shadow-sm py-3 px-3 sticky-top">
       <Container fluid>
-        <Navbar.Brand href="/" className="fw-bold text-primary fs-4">
-          StyleMarket
+        <Navbar.Brand href="/" className="fw-bold fs-4 text-black" >
+          Customer's Delight
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <InputGroup className="me-2 w-100">
-            <FormControl style={{color:"black",border:"1px solid black"}}
+            <FormControl 
               type="search"
               placeholder="Search for products or stores..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               onKeyDown={handleKeyPress}
               aria-label="Search"
+              className='searchbar'
             />
-            <Button variant="outline-primary" onClick={handleSearch} style={{color:"black",border:"1px solid black"}}>
+            <Button variant="outline-primary" onClick={handleSearch} style={{color:"black",border:"1px solid black",textDecoration:"None",backgroundColor: "white"}}
+            className='searchbutton'>
               <FaSearch />
             </Button>
           </InputGroup>
 
-          <Nav className="ms-auto my-2 my-lg-0">
+          <Nav className="ms-auto my-1 my-lg-0">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/men'swear">Men's Wear</Nav.Link>
             <Nav.Link href="#">Women's Wear</Nav.Link>

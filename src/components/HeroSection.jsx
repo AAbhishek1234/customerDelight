@@ -29,8 +29,8 @@ const storeClick = () => navigate("/stores");
           Find the perfect style from our curated collection of independent<br/> fashion stores.
         </p>
         <div className="d-flex flex-wrap gap-3">
-          <Button variant="light" className="text-primary fw-bold px-4 py-2" onClick={clickHandler}>Men's Wear</Button>
-          <Button variant="light" className="text-primary fw-bold px-4 py-2" onClick={womenClick}>Women's Wear</Button>
+          <Button variant="light" className="text-primary fw-bold px-4 py-2" onClick={clickHandler}>Men</Button>
+          <Button variant="light" className="text-primary fw-bold px-4 py-2" onClick={womenClick}>Women</Button>
           <Button variant="light" className="text-primary fw-bold px-4 py-2" onClick={storeClick}>Stores</Button>
         </div>
       </Container>
