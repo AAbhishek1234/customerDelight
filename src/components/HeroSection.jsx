@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 const Heros = () => {
 const navigate = useNavigate();
 const clickHandler = () => navigate("/men'swear");
+const womenClick = () => navigate("/women'swear");
+const storeClick = () => navigate("/stores");
   return (
     <div className="hero-section d-flex align-items-center" style={{
     backgroundImage:
@@ -28,8 +30,8 @@ const clickHandler = () => navigate("/men'swear");
         </p>
         <div className="d-flex flex-wrap gap-3">
           <Button variant="light" className="text-primary fw-bold px-4 py-2" onClick={clickHandler}>Men's Wear</Button>
-          <Button variant="light" className="text-primary fw-bold px-4 py-2">Women's Wear</Button>
-          <Button variant="light" className="text-primary fw-bold px-4 py-2">Footwear</Button>
+          <Button variant="light" className="text-primary fw-bold px-4 py-2" onClick={womenClick}>Women's Wear</Button>
+          <Button variant="light" className="text-primary fw-bold px-4 py-2" onClick={storeClick}>Stores</Button>
         </div>
       </Container>
     </div>
