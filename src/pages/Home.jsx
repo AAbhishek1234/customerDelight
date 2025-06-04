@@ -1,13 +1,17 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
-import FeaturesStore from '../components/FeaturesStore'
+import Category from '../components/Category'
+import Stores from '../components/Stores'
+import  Footer from '../components/Footer'
 function Home() {
   return (
     <>
     <Navbar/>
     <HeroSection/>
-    <FeaturesStore/>
+    <Category/>
+    <Stores/>
+    <Footer/>
     </>
   )
 }
