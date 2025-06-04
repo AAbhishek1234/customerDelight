@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Container} from 'react-bootstrap';
 import './productdetail.css';
 import Navbar from '../components/Navbar'
 const ProductDetails = () => {
@@ -11,30 +12,28 @@ const ProductDetails = () => {
   return (
     <>
     <Navbar/>
+     {/* <Container className="py-5"> */}
+        <h1 className="text-center mb-4">{product.storeName}</h1> 
     <div className="product-details container">
       <div className="product-grid">
         {/* Left: Images */}
         <div className="product-images">
           <img src={product.image} alt={product.name} className="main-image" />
-          {/* <div className="thumbnail-row">
-            <img src={product.image} alt="thumb1" />
-            <img src={product.image} alt="thumb2" />
-            <img src={product.image} alt="thumb3" />
-          </div> */}
+        
         </div>
 
         {/* Right: Info */}
         <div className="product-info">
           {/* <p className="breadcrumb">Shop all / Category / Product name</p> */}
           <h1>{product.name}</h1>
-          <p className="price">{product.price}</p>
-          <p className="rating">⭐ 4.5 stars - 156 reviews</p>
+          {/* <p className="price">{product.price}</p> */}
+          {/* <p className="rating">⭐ 4.5 stars - 156 reviews</p> */}
           <p className="desc">{product.description}</p>
 
           {/* Size Options */}
           <div className="options">
-            <label>Size</label>
-            {product.sizes ? (
+            {/* <label>Size</label> */}
+            {/* {product.sizes ? (
               <div className="size-options">
                 {product.sizes.map((size) => (
                   <button
@@ -48,7 +47,7 @@ const ProductDetails = () => {
               </div>
             ) : (
               <p>No size options available</p>
-            )}
+            )} */}
 
             {/* <label>Variant</label>
             <select>
@@ -64,11 +63,12 @@ const ProductDetails = () => {
           {/* Buttons */}
           <div className="button-group">
             {/* <button className="btn-cart">Add to Cart</button> */}
-            <button className="btn-buy">Buy Now</button>
+            <button className="btn-buy">Click to connect</button>
           </div>
         </div>
       </div>
     </div>
+    {/* </Container> */}
     </>
   );
 };

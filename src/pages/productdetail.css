@@ -17,7 +17,7 @@
   width: 100%;
   object-fit: cover !important;
   border-radius: 10px;
-  height: 25rem !important;
+  height: 100% !important;
 }
 
 .thumbnail-row {
@@ -109,4 +109,9 @@
   .btn-buy {
     width: 100%;
   }
+}
+
+h1 {
+  font-weight: bold;
+  /* font-size: 2rem; */
 }

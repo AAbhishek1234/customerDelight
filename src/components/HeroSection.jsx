@@ -11,7 +11,7 @@ const storeClick = () => navigate("/stores");
   return (
     <div className="hero-section d-flex align-items-center" style={{
     backgroundImage:
-      "linear-gradient(to right, rgba(5,5,216,0.6), rgba(74,74,170,0.1)), url('/Images/backgroundimg.jpg')",
+      " url('/Images/backgroundimg.jpg')",
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover',

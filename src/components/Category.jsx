@@ -25,7 +25,7 @@ const SplitCategory = () => {
 
   return (
     <div className="split-container">
-      <h2 className="category-heading"> Explore Category</h2>
+      <h2 className="category-heading"> Explore Categories</h2>
       <div className="split-grid">
         {categories.map((cat) => (
           <div
