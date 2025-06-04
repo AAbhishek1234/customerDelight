@@ -10,7 +10,7 @@ const ProductDetails = () => {
   if (!product) return <p>Product not found.</p>;
  const handleBuyNow = (product) => {
     const phoneNumber = "9717024896"; 
-    const message = `Hello, I am interested in buying "${product.name} from ${product.storeName}". Could you please provide more details?\nHere is the product image: ${window.location.origin}${product.image}`;
+    const message = `Hello, I am interested in buying "${product.name}" from "${product.storeName}". Could you please provide more details?\nHere is the product image: ${window.location.origin}${product.image}`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
