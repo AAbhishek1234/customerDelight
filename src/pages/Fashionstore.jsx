@@ -8,7 +8,7 @@ const products = [
     id: 1,
     name: 'T-shirt',
     price: '$25',
-    description:"Good Looking",
+    description:"Good Looking fashion",
     image: '/Images/women.jpg',
   },
   {
