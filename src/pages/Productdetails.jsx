@@ -8,11 +8,16 @@ const ProductDetails = () => {
   const [selectedSize, setSelectedSize] = useState(null);
 
   if (!product) return <p>Product not found.</p>;
-
+ const handleBuyNow = (product) => {
+    const phoneNumber = "9717024896"; 
+    const message = `Hello, I am interested in buying "${product.title}". Could you please provide more details?\nHere is the product image: ${window.location.origin}${product.image}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
   return (
     <>
     <Navbar/>
-     {/* <Container className="py-5"> */}
+     <Container className="py-5">
         <h1 className="text-center mb-4">{product.storeName}</h1> 
     <div className="product-details container">
       <div className="product-grid">
@@ -63,12 +68,12 @@ const ProductDetails = () => {
           {/* Buttons */}
           <div className="button-group">
             {/* <button className="btn-cart">Add to Cart</button> */}
-            <button className="btn-buy">Click to connect</button>
+            <button className="btn-buy"   onClick={() => handleBuyNow(product)}>Click to connect</button>
           </div>
         </div>
       </div>
     </div>
-    {/* </Container> */}
+    </Container>
     </>
   );
 };
