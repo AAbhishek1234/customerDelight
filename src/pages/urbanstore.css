@@ -1,16 +1,16 @@
 
 .urban-banner {
   width: 100%;
-  height: auto; /* Maintain aspect ratio on all screens */
-  max-height: 400px; /* You can adjust this value as needed */
-  object-fit: cover; /* Ensures the image fills the container without distortion */
+  height: auto; 
+  max-height: 400px; 
+  object-fit: cover;
   display: block;
   margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .urban-banner {
-    max-height: 290px !important; /* Smaller height for tablets and mobiles */
+    max-height: 290px !important;
   }
 }
 
