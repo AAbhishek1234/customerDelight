@@ -21,7 +21,7 @@ const stores = [
     rating: 4.6,
     location: 'Los Angeles',
     description: 'Trendy footwear for all occasions',
-    path: '/urban-kicks',
+    path: '/urban-store',
   },
   {
     id: 3,
