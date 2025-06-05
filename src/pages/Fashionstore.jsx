@@ -7,28 +7,25 @@ const products = [
   {
     id: 1,
     name: 'T-shirt',
-    price: '$25',
     description:"Good Looking fashion",
     image: '/Images/women.jpg',
   },
   {
     id: 2,
     name: 'Jeans',
-    price: '$45',
+   
     image: '/Images/jeansu.jpg',
      description:"Good Looking",
   },
   {
     id: 3,
     name: 'Shorts',
-    price: '$20',
     image: '/Images/shorts.webp',
      description:"Good Looking",
   },
   {
     id: 4,
     name: 'Sneakers',
-    price: '$60',
     image: '/Images/store5.avif',
      description:"Good Looking",
   },
@@ -40,8 +37,9 @@ const StorePage = () => {
 
  const handleCardClick = (product) => {
   const storeName = 'Fashion Forward Store';
+  const phoneNumber = '919717024896'
   navigate(`/product/${product.id}`, {
-    state: { ...product, storeName }, 
+    state: { ...product, storeName, phoneNumber }, 
   });
 };
 

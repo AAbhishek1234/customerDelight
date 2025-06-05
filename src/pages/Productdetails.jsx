@@ -9,9 +9,9 @@ const ProductDetails = () => {
 
   if (!product) return <p>Product not found.</p>;
  const handleBuyNow = (product) => {
-    const phoneNumber = "9717024896"; 
+    // const phoneNumber = "9717024896"; 
     const message = `Hello, I am interested in buying "${product.name}" from "${product.storeName}". Could you please provide more details?\nHere is the product image: ${window.location.origin}${product.image}`;
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${product.phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
   return (
@@ -21,53 +21,22 @@ const ProductDetails = () => {
         <h1 className="text-center mb-4">{product.storeName}</h1> 
     <div className="product-details container">
       <div className="product-grid">
-        {/* Left: Images */}
         <div className="product-images">
           <img src={product.image} alt={product.name} className="main-image" />
         
         </div>
 
-        {/* Right: Info */}
         <div className="product-info">
-          {/* <p className="breadcrumb">Shop all / Category / Product name</p> */}
           <h1>{product.name}</h1>
-          {/* <p className="price">{product.price}</p> */}
-          {/* <p className="rating">⭐ 4.5 stars - 156 reviews</p> */}
+         
           <p className="desc">{product.description}</p>
 
-          {/* Size Options */}
           <div className="options">
-            {/* <label>Size</label> */}
-            {/* {product.sizes ? (
-              <div className="size-options">
-                {product.sizes.map((size) => (
-                  <button
-                    key={size}
-                    onClick={() => setSelectedSize(size)}
-                    className={selectedSize === size ? 'active' : ''}
-                  >
-                    {size}
-                  </button>
-                ))}
-              </div>
-            ) : (
-              <p>No size options available</p>
-            )} */}
-
-            {/* <label>Variant</label>
-            <select>
-              <option>Select</option>
-              <option>Black</option>
-              <option>Green</option>
-            </select>
-
-            <label>Qty</label>
-            <input type="number" defaultValue={1} min={1} /> */}
+          
           </div>
 
           {/* Buttons */}
           <div className="button-group">
-            {/* <button className="btn-cart">Add to Cart</button> */}
             <button className="btn-buy"   onClick={() => handleBuyNow(product)}>Click to connect</button>
           </div>
         </div>
