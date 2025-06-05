@@ -37,7 +37,7 @@ const StorePage = () => {
 
  const handleCardClick = (product) => {
   const storeName = 'Urban Store';
-  const phoneNumber = '918126204215'
+  const phoneNumber = '919717024896'
   navigate(`/product/${product.id}`, {
     state: { ...product, storeName, phoneNumber }, 
   });
@@ -46,7 +46,7 @@ const StorePage = () => {
   return (
     <>
     <Navbar/>
-   <img src="/Images/bannerfashion.png" className="fashion-banner" alt="Fashion Banner" />
+   <img src="/Images/urbanstore.png" className="urban-banner" alt="Fashion Banner" />
 
    <Container className="py-5">
       <h2 className="text-center fw-bold mb-4">Welcome to Urban Store</h2>

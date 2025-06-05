@@ -1,5 +1,5 @@
 
-.fashion-banner {
+.urban-banner {
   width: 100%;
   height: auto; /* Maintain aspect ratio on all screens */
   max-height: 400px; /* You can adjust this value as needed */
@@ -9,8 +9,8 @@
 }
 
 @media (max-width: 768px) {
-  .fashion-banner {
-    max-height: 250px; /* Smaller height for tablets and mobiles */
+  .urban-banner {
+    max-height: 290px !important; /* Smaller height for tablets and mobiles */
   }
 }
 
